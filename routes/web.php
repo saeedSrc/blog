@@ -20,7 +20,7 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('/', 'App\Http\Controllers\HomeController@home');
-Route::get('/test', 'App\Http\Controllers\TestController@test');
+//Route::get('/test', 'App\Http\Controllers\TestController@test');
 //Route::get('/category', 'App\Http\Controllers\CategoryController@index');
 //Route::get('/category/create', 'App\Http\Controllers\CategoryController@create');
 //Route::post('/category/store', 'App\Http\Controllers\CategoryController@store');
@@ -29,13 +29,13 @@ Route::get('/test', 'App\Http\Controllers\TestController@test');
 //Route::delete('/category/destroy/{id}', 'App\Http\Controllers\CategoryController@destroy');
 
 Route::resource('category', 'App\Http\Controllers\CategoryController'); //  very good
-Route::get('user/{id}?', 'App\Http\Controllers\ShowProfile'); //  very good
-Route::get('redirect-with-helper', function () {
-    return redirect('category');
+//Route::get('user/{id}?', 'App\Http\Controllers\ShowProfile'); //  very good
+//Route::get('redirect-with-helper', function () {
+//    return redirect('category');
 //    return redirect()->to('category/create');
 //    return redirect()::to('category/create');
 
-} );
+//} );
 
 
 
@@ -88,9 +88,9 @@ Route::get('redirect-with-helper', function () {
 //    );
 //});
 
-Route::get('redirectToCategory', function () {
-//    return redirect()->route('category.show', ['test1' => 43]);
-    return redirect()->back();
-});
+//Route::get('redirectToCategory', function () {
+////    return redirect()->route('category.show', ['test1' => 43]);
+//    return redirect()->back();
+//});
 
-Route::redirect('myRoute', 'category/index');
+Route::redirect('myRoute', 'category/show');

@@ -34,7 +34,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**
@@ -45,7 +45,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-       return view('welcome');
+//        abort(500);
+       return view('admin.admin');
     }
 
     /**
