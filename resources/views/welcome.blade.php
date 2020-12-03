@@ -44,8 +44,16 @@
         </div>
         <button type="submit" name="button" class="btn btn-primary">Submit</button>
     </form>
+    {{ $share }}
 
+    <p> the time is :  @datetime(  \Illuminate\Support\Facades\Date::now()  ) </p>
 
-        </div>
+    @ifLogin(true)
+    <p> you are logged in. </p>
+
+    {{--@elseifLogin--}}
+    {{--<p> you are not logged in. </p>--}}
+       @endifLogin
+
     </body>
 </html>
