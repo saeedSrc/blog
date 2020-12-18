@@ -20,6 +20,7 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('/', 'App\Http\Controllers\HomeController@home');
+Route::get('/show-user/{name}', 'App\Http\Controllers\HomeController@show');
 //Route::get('/test', 'App\Http\Controllers\TestController@test');
 //Route::get('/category', 'App\Http\Controllers\CategoryController@index');
 //Route::get('/category/create', 'App\Http\Controllers\CategoryController@create');

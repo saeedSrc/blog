@@ -1,0 +1,55 @@
+{% load static%}
+{%static "dars" as BaseUrl%}
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+    <script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'js/srch.js' %}"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo"> <img src="{% static 'img/Dig.png' %}" class="logo"> </label>
+        <ul>
+            <li><a href="/sabad">سبد درس ({{cn}})</a></li>
+            <li><a href="/contact">تماس با ما</a></li>
+            <li><a href="/about">درباره ما</a></li>
+            <li><a href="/SMP">ثبت نام</a></li>
+            <li><a href="/">خانه</a></li>
+        </ul>
+        <label id="icon"> <img src="{% static 'img/menu.png' %}"> </i> </label>
+    </nav>
+    <form id="form1">{%csrf_token%}
+        <div class="element-table-home4">
+            <div class="search-box">
+                <input type="text" id="sear" name="sear" class="search" placeholder="جستجو ..." />
+                <button type="submit" class="search-btn" onclick="search()">جستجو</button>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="element-table">
+    {%for dt in rst%}
+        <form action="/viewcourse/{{dt.4}}/"> {%csrf_token%}
+            <div class="col">
+                <img src="{{BaseUrl}}/{{dt.0}}" class="user">
+                <h4>{{dt.1}}</h4>
+                <label class="mytxt">{{dt.2}} تومان</label>
+                <h4>{{dt.3}} تومان</h4>
+                <button class="tbl-btn">مشاهده</button>
+            </div>
+        </form>
+    {%endfor%}
+    </div>
+
+    <footer class="footer">
+        <div style="text-align:center">کلیه حقوق مادی و معنوی این محصول متعلق به شرکت دیجیتال تراکنش تبریز می باشد</div>
+    </footer>
+</body>
+
+</html>

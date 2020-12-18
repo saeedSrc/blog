@@ -1,0 +1,328 @@
+
+h1 {
+    font-size: 2.5vw !important;
+}
+
+.signup-content {
+    padding: 5%;
+}
+
+.signup-box ::-webkit-input-placeholder {
+    color: #9A9A9A;
+    font-size: 0.8vw;
+}
+
+.signup-box ::-moz-placeholder {
+    color: #9A9A9A;
+    font-size: 0.8vw;
+}
+
+.signup-box :-ms-input-placeholder {
+    color: #9A9A9A;
+    font-size: 0.8vw;
+}
+
+.signup-box ::placeholder {
+    color: #9A9A9A;
+    font-size: 0.8vw;
+}
+
+.signup-box h2 {
+    text-align: right;
+    margin: 2% 0%;
+    font-size: 1.6vw;
+}
+
+.signup-box label {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.signup-box {
+    z-index: 1;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    /*padding: 5%;*/
+    box-shadow: 0px 4px 6px rgba(196, 196, 196, 0.44);
+    border-radius: 4px;
+    margin-top: -11%;
+}
+.signup-box ul {
+    word-spacing: -1vw;
+}
+
+.signup-box li {
+    width: 49%;
+    margin: 0;
+    word-spacing: -1vw;
+    border-bottom: 1px solid #F4F4F4;
+
+}
+
+.signup-box nav li a.active {
+    padding: 0;
+
+}
+
+.signup-box li:first-of-type {
+    border-right: 1px solid #F4F4F4;
+
+}
+
+.signup-box a {
+    display: inline-block;
+    width: 96%;
+    font-size: 1.6vw;
+    word-spacing: initial;
+    color: #000;
+    padding: 2% !important;
+}
+
+.form-group {
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.signup-box form {
+    text-align: right;
+    direction: rtl;
+    padding: 4%!important;
+}
+
+.form-group input {
+    width: 80%;
+    padding-right: 1%;
+    height: 2vw;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    font-family: iranyekan, serif !important;
+}
+
+.form-group select {
+    width: 80%;
+    padding-right: 1%;
+    height: 2vw;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    font-family: iranyekan, serif !important;
+    box-sizing: border-box;
+    font-size: 0.8vw;
+}
+
+
+.form-group input, select{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+.flow-next {
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flow-now {
+    width: 49px;
+    height: 13px;
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flow-button {
+    width: 15%;
+    padding: 0.3vw 1vw;
+}
+
+.follow-up-section {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+h3 {
+ vertical-align: middle;
+}
+
+.signup-content p {
+    border-radius: 100%;
+    height: 12px;
+    width: 12px ;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6vw !important;
+
+}
+
+.success p {
+    width: 100% !important;
+    text-align: center;
+    vertical-align: initial ;
+    display: block;
+    height: initial;
+}
+
+.success img {
+    width: 25%;
+}
+
+.success>* {
+    margin-bottom: 3%;
+}
+
+.conditions {
+    margin: 5% 0;
+}
+
+.conditions>* {
+    margin-bottom: 1%;
+}
+
+.general-profile {
+    display: none;
+}
+
+.school-profile {
+    display: none;
+}
+
+.register-msc-profile {
+    display: block;
+}
+
+.register-phd-profile {
+    display: none;
+}
+
+
+.success {
+    padding: 4%;
+    display: none;
+}
+
+.signup-content nav ,form {
+    display: block;
+}
+
+/*=================mobile==================*/
+
+@media only screen and (max-width: 780px) {
+
+    .signup-box ::-webkit-input-placeholder {
+        color: #9A9A9A;
+        font-size: 3vw;
+    }
+
+    .signup-box ::-moz-placeholder {
+        color: #9A9A9A;
+        font-size: 3vw;
+    }
+
+    .signup-box :-ms-input-placeholder {
+        color: #9A9A9A;
+        font-size: 3vw;
+    }
+
+    .signup-box ::placeholder {
+        color: #9A9A9A;
+        font-size: 3vw;
+    }
+    .header-bottom {
+        display: none;
+    }
+    .signup-content {
+        padding: 0;
+    }
+
+    .signup-box form {
+        padding: 0%!important;
+    }
+
+    .signup-box {
+        width: 100%;
+        padding: 0;
+        margin-top: 0%;
+    }
+
+    .signup-box li {
+        width: 49%;
+    }
+    .form-group {
+        text-align: right;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .form-group input{
+        width: 100%;
+        height: 12vw;
+    }
+
+    .form-group select {
+        width: 100%;
+        height: 12vw;
+    }
+
+    .signup-box a {
+        width: 96%;
+        font-size: 4vw;
+    }
+
+    .signup-box nav li a.active {
+        border-bottom: 1.6vw solid #205F8F;
+
+    }
+
+    .signup-box h2 {
+        font-size: 4vw;
+    }
+
+    .signup-box form {
+        padding: 5%!important;
+    }
+
+    .signup-box label {
+      font-size: 3.5vw;
+    }
+
+    .form-group select {
+        font-size: 3vw;
+    }
+
+    .follow-up-section {
+         display: block;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .flow-button {
+        width: 100%;
+        height: 12vw;
+        margin-top: 6%;
+    }
+
+    .conditions>* {
+        margin-bottom: 3%;
+    }
+
+    .success img {
+        width: 51%;
+    }
+
+    .success p {
+     font-size: 3vw !important;
+    }
+}
+
+
+/*=================mobile==================*/

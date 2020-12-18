@@ -1,0 +1,58 @@
+{%load static%}
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'css/SMP_style.css' %}">
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script>
+		$(document).ready(function () {
+			$('#icon').click(function () {
+				$('ul').toggleClass('show');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<nav>
+		<label id="logo"> <img src="{% static 'img/Dig.png' %}" class="logo"> </label>
+		<ul>
+			<li><a href="/contact">تماس با ما</a></li>
+			<li><a href="/about">درباره ما</a></li>
+			<li><a href="">ثبت نام</a></li>
+			<li><a href="/" class="active">خانه</a></li>
+		</ul>
+		<label id="icon"> <img src="{% static 'img/menu.png' %}" class=""> </i> </label>
+	</nav>
+	<div class="element-table">
+		<form id="form1" action="/Register">{%csrf_token%}
+			<div class="col">
+				<img src="{% static 'img/PHD.png' %}" class="">
+				<strong><h3>دکتری</h3></strong>
+				<br>
+				<a class="cola" href="{%static 'resumes/PhD.pdf' %}">زمان بندی آزمون های دکتری</a>
+				<br><br>
+				<button type="submit" class="btn">انتخاب </button>
+			</div>
+		</form>
+		<form id="form1" action="/Registera">{%csrf_token%}
+			<div class="col">
+				<img src="{% static 'img/MSC.png' %}" class="">
+				<strong><h3>کارشناسی ارشد</h3></strong>
+				<br>
+				<a class="cola" href="{%static 'resumes/MSC.pdf' %}">زمان بندی آزمون های ارشد</a>
+				<br><br>
+				<button type="submit" class="btn">انتخاب </button>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+		<div class="footer">کلیه حقوق مادی و معنوی این محصول متعلق به شرکت دیجیتال تراکنش تبریز می باشد</div>
+	</footer>
+</body>
+
+</html>

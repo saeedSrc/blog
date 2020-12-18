@@ -1,0 +1,103 @@
+<!--{% load static%}-->
+
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>حساب کاربری</title>
+    <!--<link rel="stylesheet" href="../static/css/profile.css">-->
+    <!--<script src="../static/js/jquery-3.4.1.js"></script>-->
+    <!--<script src="../static/js/prf.js"></script>-->
+    <link rel="stylesheet" href="../static/css/profile.css">
+    <script src="../static/js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header').load('header.html', function() {
+                $(".banner").attr('src', '../static/img/about-banner.jpg');
+                $("#form1").css('display', 'none');
+                var mainTitle = '<h1>حساب کاربری</h1>';
+                $(".main-title").html(mainTitle).css('top', '20%');
+                $(".container").css('height', '35vw');
+                $(".container").css('z-index', '-1');
+
+            });
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="profile-content">
+        <div class="profile back-white-color1">
+            <div class="profile-right-section back-white-color3">
+                <img src="../static/img/profile-img.png" alt="">
+                <h2 class="light-blue-color">عسل اسمعیلی</h2>
+                <h3>مقطع: کارشناسی ارشد</h3>
+                <h3>کدملی:  ۸۹۷۹۸۲۳۷۴۹۸۹۱۲۳</h3>
+                <div> <button class="btn back-white-blue-color light-blue-color"><span>ویرایش اطلاعات</span> <img src="../static/img/edit-profile.svg" alt=""></button></div>
+                <img src="../static/img/login.png" alt="">
+            </div>
+            <div class="profile-left-section">
+                <div class="profile-header back-white-color3">
+                    <nav>
+                        <ul>
+                            <li class="right-text">
+                                <a href="">
+                                    <img src="../static/img/student.png" alt="">
+                                    <span class="light-blue-color"> کد امتحانی </span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../static/img/text.png" alt="">
+                                    <span class="light-blue-color">  عنوان امتحانی: نمایه سازی </span>
+
+                                </a>
+                            </li>
+                            <li class="left-text">
+                                <a href="">
+                                    <img src="../static/img/logout.png" alt="">
+                                    <span class="light-blue-color"> خروج از حساب کاربری </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="profile-data">
+                    <div class="profile-terms">
+                            <img src="../static/img/test.png" alt="">
+                            <div class="back-light-blue-color white-color">
+                                <h3>شرکت در آزمون</h3>
+                            </div>
+                        </div>
+                    <div class="profile-terms">
+                        <img src="../static/img/evaluation.png" alt="">
+                        <div class="back-light-blue-color white-color">
+                            <h3>مشاهده گارنامه</h3>
+                        </div>
+                    </div>
+                    <div class="profile-terms">
+                        <img src="../static/img/answers.png" alt="">
+                        <div class="back-light-blue-color white-color">
+                            <h3>دانلود پاسخنامه</h3>
+                        </div>
+                    </div>
+                    <div class="profile-terms">
+                        <img src="../static/img/money.png" alt="">
+                        <div class="back-light-blue-color white-color">
+                            <h3>نمایش امور مالی</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="login-label" src="../static/img/login-label.png" alt="">
+        </div>
+</div>
+<div id="footer"></div>
+</body>
+
+</html>

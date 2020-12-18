@@ -1,0 +1,160 @@
+<!--{%load static%}-->
+<!--{%static "dars" as BaseUrl1%}-->
+<!--{%static "modares" as BaseUrl2%}-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<!--<link rel="stylesheet" type="text/css" href="{% static 'css/dars_style.css'%}">-->
+	<!--<script src="{% static 'js/jquery-3.4.1.js'%}"></script>-->
+	<link rel="stylesheet" href="../static/css/dars_style.css">
+	<script src="../static/js/jquery-3.4.1.js"></script>
+	<script>
+        $(document).ready(function(){
+            $('#header').load('header.html', function() {
+                $(".banner").attr('src', '../static/img/about-banner.jpg');
+                $("#form1").css('display', 'none');
+                var mainTitle = '<h1>دوره‌ی برنامه نویسی سی شارپ</h1>';
+                $(".main-title").html(mainTitle).css('top', '20%');
+                $(".container").css('height', '15vw');
+
+            });
+            $("#footer").load("footer.html");
+        });
+	</script>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="course-content">
+	<div class="desktop">
+		<div class="course-info">
+			<div class="course-info-img">
+				<img class="back-course-img" src="../static/img/back-course.png" alt="">
+				<img class="group-course-img back-circle-large" src="../static/img/back-circle-large.png" alt="">
+				<img class="group-course-img" src="../static/img/csharp.png" alt="">
+				<div class="intro-course-teacher white-color">
+					<h1>آموزش زبان برنامه نویسی سی‌شارپ</h1>
+					<br>
+					<h1>مدرس : یوسف مسعودی</h1>
+				</div>
+				<div class="course-info-text">
+					<h2>اطلاعات دوره</h2>
+					<br>
+					<h2><span class="gray-color">مدت زمان دوره : &nbsp </span> سه ساعت ۱۱ دیقه</h2>
+					<br>
+					<h2><span class="gray-color">تاریخ انتشار: &nbsp </span> ۱۳۹۹/۰۸/۲۹</h2>
+				</div>
+				<div class="course-buy-button-section">
+					<div class="course-discount-section">
+						<div class="red-color">
+							<span class="">-۲٪ </span>
+							<span class="base-price gray-color">۴۴۰۰۰۰ </span>
+						</div>
+						<h1 class="final-price light-green-color"> ۱۷۰۰۰۰  تومان </h1>
+					</div>
+					<button class="btn buy-btn">خرید درس+</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile">
+		<div class="course-info">
+			<div class="course-info-img">
+				<div style="background: linear-gradient(45deg , #6e19fb, #7c1fa4);">
+				<img class="back-course-img" src="../static/img/back-course.png" alt="">
+				</div>
+				<img class="group-course-img back-circle-large" src="../static/img/back-circle-large.png" alt="">
+				<img class="group-course-img" src="../static/img/csharp.png" alt="">
+				<div class="intro-course-teacher white-color">
+					<h1>آموزش زبان برنامه نویسی سی‌شارپ</h1>
+					<br>
+					<h1>مدرس : یوسف مسعودی</h1>
+				</div>
+			</div>
+			<div class="course-info-text">
+				<h2>اطلاعات دوره</h2>
+				<br>
+				<h2><span class="gray-color">مدت زمان دوره : &nbsp </span> سه ساعت ۱۱ دیقه</h2>
+				<br>
+				<h2><span class="gray-color">تاریخ انتشار: &nbsp </span> ۱۳۹۹/۰۸/۲۹</h2>
+			</div>
+			<div class="course-buy-button-section">
+				<div class="course-discount-section">
+					<div class="red-color">
+						<span class="">-۲٪ </span>
+						<span class="base-price gray-color">۴۴۰۰۰۰ </span>
+					</div>
+					<h1 class="final-price light-green-color"> ۱۷۰۰۰۰  تومان   </h1>
+				</div>
+				<button class="btn buy-btn">خرید درس+</button>
+			</div>
+		</div>
+	</div>
+	<div class="course-summary center">
+		<nav>
+			<ul>
+				<li><a href="#">سرفصل‌های دوره</a></li>
+				<li><a class="active"href="/contact">مدرس دوره</a></li>
+				<li><a  href="/about">چکیده‌ی دوره</a></li>
+			</ul>
+		</nav>
+		<div class="separator"></div>
+	</div>
+	<div class="summary-text-section">
+		<h2 class="light-blue-color">
+			چکیده‌ی دوره
+		</h2>
+		<p class="black-color">
+			پایتون یک زبان برنامه نویسی سطح بالا می باشد که ساختار آن بگونه ای بوده است
+			که عمومیت بسیاری در حوزه های مختلف پیدا کرده است
+			و بر روی انواع مختلف سیستم عامل ها نیز قابل اجرا است. از ویژگی های بارز این زبان برنامه نویسی
+			می توان به سهولت یادگیری و استفاده از آن اشاره کرد. کارائی این زبان برنامه نویسی تا جائی بوده است
+			که در حال حاضر بیشتر نرم افزارهای کارا و معروف مانند اینستاگرام، آمازون، فیسبوک، یاهو، گوگل و ...
+			بر اساس آن بنا شده اند. آموزش جاری می تواند برای تمامی رشته ها و افرادی که علاقه مند
+			به یادگیری برنامه نویسی و استفاده از پایتون در کارهای تحقیقاتی و توسعه برنامه های تحت وب و موبایل هستند مفید واقع شود.
+		</p>
+	</div>
+	<div class="summary-text-section">
+		<h2 class="light-blue-color">
+			مدرس دوره
+		</h2>
+		<p class="black-color">
+			دکتر یوسف مسعودی سبحان زاده دکتر یوسف مسعودی سبحان زاده فارغ التحصیل رشته بیوانفورماتیک
+			از دانشگاه تهران هستند. رساله دکتری ایشان هدف یابی مجدد داروها با استفاده
+			از تکنیک هایداده کاوی بوده است و مقالات متعددی نیز در این زمینه منتشر کرده اند
+			. ایشان بعد از فارغ التحصیل شدن، یک دوره پسا دکتری در دانشگاه تهران گذرانده اند
+			و هم اکنون بعنوان پژوهشگر با دانشگاه های علوم پزشکی تبریز و Mount Sinai آمریکا همکاری،
+			و در این راستا در حوزه کشف نشان گرهای زیستی و یافتن داروهای مهار کننده آن ها فعالیت دارند.
+		</p>
+	</div>
+	<div class="separator"></div>
+	<div class="course-titles">
+		<h2 class="light-blue-color"> سرفصل‌های دوره</h2>
+		<h3 class="light-blue-color"><span class="back-light-blue-color white-color">۱</span>&nbsp&nbspمقدمه‌ای بر پایتون</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspمعرفی</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspویژگی</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspکاربرد این زبان</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspاولین برنامه</h3>
+
+		<h3 class="light-blue-color"><span class="back-light-blue-color white-color">۲</span>&nbsp&nbspمتغییرها</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspمعرفی</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspویژگی</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspکاربرد این زبان</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspاولین برنامه</h3>
+
+		<h3 class="light-blue-color"><span class="back-light-blue-color white-color">۳</span>&nbsp&nbspمتغییرها</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspمعرفی</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspویژگی</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspکاربرد این زبان</h3>
+		<h3><label class="back-light-blue-color white-color"></label>&nbsp&nbspاولین برنامه</h3>
+
+	</div>
+</div>
+
+<div id="footer"></div>
+</body>
+
+</html>

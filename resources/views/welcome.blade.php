@@ -55,5 +55,13 @@
     {{--<p> you are not logged in. </p>--}}
        @endifLogin
 
+
+
+    @foreach($users as $user)
+
+       <p>{{ $user->name }}</p>
+
+        @endforeach
+
     </body>
 </html>

@@ -1,0 +1,93 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/panel.css' %}">
+    <script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'js/panel_script.js' %}"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo"> <img src="{% static 'img/Dig.png' %}" class="logo"> </label>
+        <ul>
+            <li><a href="/">خروج</a></li>
+            <li><a href="" class="active">آزمون</a></li>
+            <li><a href="/">خانه</a></li>
+        </ul>
+        <label id="icon"> <img src="{% static 'img/menu.png' %}"> </i> </label>
+    </nav>
+    <form id="form9"> {%csrf_token%}
+        <div class="element-table">
+            <div class="col">
+                <h5>کد ملی: {{kodm}}</h5>
+            </div>
+            <div class="col">
+                <h5>نام و نام خانوادگی: {{nam}}</h5>
+            </div>
+            <div class="col">
+                <h5>عنوان امتحانی: {{emt}}</h5>
+            </div>
+            <div class="col">
+                <h5>مقطع امتحانی: {{magta}}</h5>
+            </div>
+            <div class="col">
+                <h5>کد امتحانی: {{kod}}</h5>
+            </div>
+            <div class="col" style="display: none;">
+                <input type="text" name="kodm" value="{{kodm}}">
+            </div>
+            <div class="col" style="display: none;">
+                <input type="text" name="nam" value="{{nam}}">
+            </div>
+            <div class="col" style="display: none;">
+                <input type="text" name="emt" value="{{emt}}">
+            </div>
+            <div class="col" style="display: none;">
+                <input type="text" name="magta" value="{{magta}}">
+            </div>
+            <div class="col" style="display: none;">
+                <input type="text" name="ramz" value="{{ramz}}">
+            </div>
+            <div class="col" style="display: none;">
+                <input type="text" name="kod" value="{{kod}}">
+            </div>
+        </div>
+        {%if er == "0" %}
+        <div class="element-err">
+            لطفا در زمان تعیین شده، برای شرکت در آزمون اقدام فرمائید
+        </div>
+        {%endif%}
+        <div class="element-table_b">
+            <div class="col_b">
+                <img src="{% static 'img/register.png'%}">
+                <h4 class="htext"> آزمون</h4>
+                <button class="btn" onclick="sherkat()">شرکت در آزمون </button>
+            </div>
+            <div class="col_b">
+                <img src="{% static 'img/Result.png'%}">
+                <h4 class="htext"> کارنامه آزمون</h4>
+                <input type="submit" class="btn" value="مشاهده" onclick="karnameh()">
+            </div>
+            <div class="col_b">
+                <img src="{% static 'img/ANS.jpg'%}">
+                <h4 class="htext"> پاسخنامه آزمون</h4>
+                <button class="btn">دانلود </button>
+            </div>
+            <div class="col_b">
+                <img src="{% static 'img/fin.png'%}">
+                <h4 class="htext"> امور مالی</h4>
+                <button class="btn">وضعیت </button>
+            </div>
+        </div>
+    </form>
+    <footer class="footer">
+        <div style="text-align:center">کلیه حقوق مادی و معنوی این محصول متعلق به شرکت دیجیتال تراکنش تبریز می باشد</div>
+    </footer>
+</body>
+
+</html>

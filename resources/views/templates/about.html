@@ -1,0 +1,92 @@
+<!--{%load static%}-->
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/css/about_style.css">
+	<!--<link rel="stylesheet" href="{% static 'css/about_style.css'%}">-->
+	<!--<script src="{% static 'js/jquery-3.4.1.js'%}"></script>-->
+	<script src="../static/js/jquery-3.4.1.js"></script>
+	<script>
+	 $(document).ready(function(){
+            $('#header').load('header.html', function() {
+                $(".banner").attr('src', '../static/img/about-banner.jpg');
+                $("#form1").css('display', 'none');
+                var mainTitle = '<h1>درباره‌ی ‌ما</h1>';
+                $(".main-title").html(mainTitle).css('top', '20%');
+                $(".container").css('height', '12vw');
+
+            });
+            $("#footer").load("footer.html");
+	 });
+	</script>
+</head>
+<body>
+    <div id="header"></div>
+	<div class="about-content">
+		<div class="about-section-preview">
+			<div class="about-text-section">
+				<h2>
+					<span class="light-blue-color">دیجی تات</span> در یک نگاه
+				</h2>
+				<p class="violet-color">
+					<span>شرکت دیجیتات</span> تراکنش تبریز در سال 99 و با هدف فراهم سازی محتوی های با کیفیت دیجیتال و
+					فعالیت در زمینه تجارت الکترونیک کار خود را آغاز کرده است.
+					بنیانگذاران این موسسه،آقایان دکتر کریم عباسی و دکتر یوسف مسعودی سبحان زاده می باشند.
+
+				</p>
+			</div>
+			<div class="about-img-section">
+				<img src="../static/img/team_presentation.png" alt="">
+			</div>
+		</div>
+		<h2>
+			تیم <span class="light-blue-color">دیجیتات</span>
+		</h2>
+		<div class="about-section-team-intro">
+			<div class="about-section">
+				<div class="about-text-section">
+					<p class="violet-color">
+						<span class="light-blue-color">دکتر کریم عباسی</span> فارغ التحصیل رشته بیوانفورماتیک از دانشگاه تهران هستند.
+						ایشان در رساله دکتری خود بر روی مسئله پیش بینی تعامل پروتئین- دارو در حضور تعداد داده های کم با استفاده از تکنیک های یادگیری عمیق و یادگیری انتقالی تمرکز نموده اند. در این راستا مقالاتی در معتبرترین ژورنال های حوزه بیوانفورماتیک چاپ نموده اند.
+						هم اکنون ایشان بر روی مسئله جدیدی در حوزه طراحی دارو با پروفسور Antti Poso از دانشگاه University of Eastern Finland فنلاند همکاری دارند. همچنین ایشان به عنوان همکار اصلی، چندین طرح پژوهشی در موسسه پژوهش های بنیادی تهران (IPM) و صندوق حمایت از پژوهشگران و فناوران کشور نیز به انجام رسانده اند.
+
+					</p>
+				</div>
+				<div class="about-preview-img-section">
+					<img class="teacher-img" src="../static/img/KA.png" alt="">
+					<img  class="teacher-back-img" src="../static/img/back-circle-large.png" alt="">
+                    <div class="teacher-name-title">
+						<h3 class="light-blue-color">دکتر کریم عباسی<img src="../static/img/small-circle.png" alt=""></h3>
+					</div>
+					<button class="btn btn-teacher-preview light-blue-color">مشاهده رزومه</button>
+				</div>
+			</div>
+		</div>
+		<div class="separator"></div>
+		<div class="about-section-team-intro">
+			<div class="about-section">
+				<div class="about-text-section">
+					<p class="violet-color">
+						<span class="light-blue-color">دکتر کریم عباسی</span> فارغ التحصیل رشته بیوانفورماتیک از دانشگاه تهران هستند.
+						ایشان در رساله دکتری خود بر روی مسئله پیش بینی تعامل پروتئین- دارو در حضور تعداد داده های کم با استفاده از تکنیک های یادگیری عمیق و یادگیری انتقالی تمرکز نموده اند. در این راستا مقالاتی در معتبرترین ژورنال های حوزه بیوانفورماتیک چاپ نموده اند.
+						هم اکنون ایشان بر روی مسئله جدیدی در حوزه طراحی دارو با پروفسور Antti Poso از دانشگاه University of Eastern Finland فنلاند همکاری دارند. همچنین ایشان به عنوان همکار اصلی، چندین طرح پژوهشی در موسسه پژوهش های بنیادی تهران (IPM) و صندوق حمایت از پژوهشگران و فناوران کشور نیز به انجام رسانده اند.
+
+					</p>
+				</div>
+				<div class="about-preview-img-section">
+					<img class="teacher-img" src="../static/img/KA.png" alt="">
+					<img  class="teacher-back-img" src="../static/img/back-circle-large.png" alt="">
+					<div class="teacher-name-title">
+						<h3 class="light-blue-color">دکتر کریم عباسی<img src="../static/img/small-circle.png" alt=""></h3>
+					</div>
+					<button class="btn btn-teacher-preview light-blue-color">مشاهده رزومه</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.test nav ul li:first-of-type {
+    text-align: right;
+}
+
+
+.test nav ul li:last-of-type {
+    text-align: left;
+}
+
+
+.test-header {
+    padding: 2% ;
+}
+
+/*=================mobile==================*/
+
+@media only screen and (max-width: 780px) {
+
+    .profile-right-section {
+        display: none;
+    }
+
+    .profile-header {
+        display: none;
+    }
+}
+
+
+
+/*===========mobile============*/

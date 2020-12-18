@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>ورود</title>
+    <link rel="stylesheet" href="../static/css/login_style.css">
+    <script src="../static/js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header').load('header.html', function() {
+                $(".banner").attr('src', '../static/img/about-banner.jpg');
+                $("#form1").css('display', 'none');
+                var mainTitle = '<h1>ورود به حساب کاربری</h1>';
+                $(".main-title").html(mainTitle).css('top', '45%');
+                $(".container").css('height', '16vw');
+                $(".container").css('z-index', '-1');
+
+            });
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<div class="login-content">
+    <div class="login-box center back-white-color">
+        <img  class="middle" src="../static/img/login.png" alt="">
+        <form class="violet-color middle" action="/">
+            <div class="form-group">
+                <label class="violet-color" for="name">نام کاربری</label>
+                <input  type="text" id="name" name="name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="violet-color" for="password-name">رمز عبور</label>
+                <input  type="password" id="password-name" name="password-name">
+            </div>
+            <br>
+            <button class="btn submit-btn" type="submit" value="Submit">ورود</button>
+            <span><a class="light-blue-color" href="">آیا رمز عبور خود را فراموش کردید ؟</a></span>
+        </form>
+        <img class="login-label" src="../static/img/login-label.png" alt="">
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

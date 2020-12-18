@@ -1,0 +1,75 @@
+﻿{%load static%}
+{%static "temporary" as BaseUrl%}
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'css/sabad.css' %}">
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script src="{% static 'js/digitat_sabad.js' %}"> </script>
+</head>
+
+<body>
+	<nav>
+		<label id="logo"> <img src="{% static 'img/Dig.png' %}" class="logo"> </label>
+		<ul>
+			<li><a href="/contact">تماس با ما</a></li>
+			<li><a href="/about">درباره ما</a></li>
+			<li><a href="/SMP">ثبت نام</a></li>
+			<li><a href="/">خانه</a></li>
+		</ul>
+		<label id="icon"> <img src="{% static 'img/menu.png' %}" class=""> </i> </label>
+	</nav>
+
+	<form id="form1">{%csrf_token%}
+		<div class="element-table-home4">
+			<div class="search-box">
+				<input type="text" id="sear" name="sear" class="search" placeholder="جستجو درس های بیشتر ..." />
+				<button type="submit" class="search-btn" onclick="search()">جستجو</button>
+			</div>
+		</div>
+	</form>
+
+	<ul class="ultxt">
+		<li class="list2">
+			توجه !
+		</li>
+		<li class="listl">
+			<span class="spn"> خواهشمند است در صورت نیاز به پشتیبانی با شماره 04133104610 تماس حاصل فرمائید.<span>
+		</li>
+	</ul>
+
+	<div class="element-table">
+		<table class="table">
+			<thead>
+				<th>ردیف</th>
+				<th>عنوان آموزش</th>
+				<th>وضعیت</th>
+				<th>مبلغ (تومان)</th>
+				<th>دانلود</th>
+			</thead>
+			<tbody>
+				{%for dt in sefaresh%}
+				<tr>
+					<td data-label="ردیف">{{forloop.counter}}</td>
+					<td data-label="عنوان">{{dt.1}}</td>
+					<td data-label="وضعیت">پرداخت شده</td>
+					<td data-label="مبلغ (تومان)">{{dt.2}}</td>
+					<form action="">
+						<td><a href="{{BaseUrl}}/{{dt.0}}">دانلود</a></td>
+					</form>
+				</tr>
+				{%endfor%}
+			</tbody>
+		</table>
+		</div>
+
+
+		<footer class="footer">
+			<div style="text-align:center">کلیه حقوق مادی و معنوی این محصول متعلق به شرکت دیجیتال تراکنش تبریز می باشد
+			</div>
+		</footer>
+
+</html>

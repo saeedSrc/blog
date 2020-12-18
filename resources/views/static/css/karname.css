@@ -1,0 +1,81 @@
+.mobile-table {
+	display: none;
+}
+
+
+.desktop-table {
+	display: inline-table;
+}
+
+/*=================mobile==================*/
+
+@media only screen and (max-width: 780px) {
+	.desktop-table {
+		display: none;
+	}
+
+	.mobile-table {
+		display: inline-table;
+	}
+
+
+	.profile-right-section {
+		display: none;
+	}
+
+	.profile-header {
+		display: none;
+	}
+
+	.evaluation-header nav ul li a {
+		font-size: 4vw;
+	}
+
+	.evaluation tr {
+		border: 1px solid #F0F0F0;
+		font-size: 3.5vw;
+		text-align: center;
+	}
+
+	.evaluation table td,th {
+		padding: 6% 3%;
+		width: 50%;
+		margin: auto;
+
+	}
+
+	.evaluation table th {
+		background: white;
+
+	}
+
+	.evaluation table  {
+		margin: auto;
+		border-collapse: collapse;
+		margin-bottom: 10%;
+	}
+
+	table tr:first-child  {
+		border-top: 0!important;
+	}
+	table tr {
+		border-left: 0!important;
+	}
+	table tr:last-child  {
+		border-bottom: 0!important;
+	}
+	table tr {
+		border-right: 0!important;
+	}
+
+	.evaluation-table table {
+		width: 60%;
+		margin-top: 4%;
+		border-radius: 8px;
+	}
+
+}
+
+
+
+/*===========mobile============*/

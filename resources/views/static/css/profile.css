@@ -1,0 +1,370 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.profile-content {
+    padding-bottom: 10%;
+}
+
+.header-bottom h1 {
+    font-size: 2.5vw !important;
+
+}
+
+.profile-content nav {
+    direction: rtl;
+}
+
+.profile-header {
+    padding: 3% 0;
+    box-shadow: 0px 4px 115px rgba(223, 223, 223, 0.4)!important;
+
+}
+
+.profile-header nav ul li {
+    width: 31%;
+    margin: 0
+}
+
+.profile-content nav img{
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    /*width: 5%;*/
+}
+
+.profile-content nav span{
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.profile-right-section {
+    padding: 3% 0px;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 4px 115px rgba(223, 223, 223, 0.4);
+}
+
+.profile-left-section {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0px 4px 23px rgba(218, 218, 218, 0.84);
+
+}
+
+.profile-right-section>* {
+    margin-bottom: 3%;
+}
+
+.profile-right-section img:first-child {
+    width: 30%;
+    cursor: pointer;
+}
+
+.profile-right-section img:last-child {
+    width: 70%;
+    margin-top: 10%;
+}
+
+.profile-right-section button {
+    width: 50%;
+    font-size: 0.8vw;
+}
+
+.profile-right-section button img {
+    width: 10%!important;
+    margin: 0 !important;
+    vertical-align: middle;
+}
+
+.profile-terms {
+    width: 15%;
+    display: inline-block;
+    background: white;
+    box-shadow: 0px 4px 23px rgba(218, 218, 218, 0.84);
+    border-radius: 8px;
+    cursor: pointer;
+    padding-top: 2%;
+    margin: 12% 2%;
+}
+
+.profile-terms div {
+    border-bottom-right-radius:8px ;
+    border-bottom-left-radius:8px ;
+    padding: 5%;
+}
+
+.profile-terms img {
+    margin-bottom: 10%;
+
+}
+
+.profile-terms h3 {
+    font-size: 1vw;
+}
+
+.profile-right-section h2 {
+    cursor: pointer;
+}
+
+.profile {
+    position: relative;
+    direction: rtl;
+    box-shadow: 0px 4px 23px rgba(218, 218, 218, 0.84);
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: -23%;
+
+}
+
+.login-label {
+    position: absolute;
+    right: 3%;
+    bottom: 0%;
+    width: 9% !important;
+}
+
+.profile-data {
+ display: block;
+}
+
+
+.test-header nav ul li  {
+    margin: 0 !important;
+    width: 24%;
+}
+
+.evaluation-header {
+    padding: 2% 0;
+}
+
+.evaluation-header nav ul li {
+    margin: 0 ;
+    width: 45%;
+}
+
+.get-question {
+    position: relative;
+    margin: 3% 0 ;
+}
+
+.get-question input {
+    border: 1px solid #DFDFDF;
+    width: 3%;
+    padding: 0 3%;
+    height: 2vw;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.get-question .plus {
+    right: 50.5%;
+    position: absolute;
+    top: 10%;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.get-question .minus {
+    position: absolute;
+    right: 57%;
+    top: 10%;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.get-question h3 {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.question p {
+    text-align: right;
+    width: 80%;
+    margin: auto;
+}
+
+.question nav ul li {
+    margin: 1%;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.question>* {
+    margin-bottom: 3%;
+}
+
+.question-flow button {
+    box-shadow: 0 0 !important;
+    border: 1px solid #ECECEC;
+    margin: 1%;
+}
+
+
+.evaluation-table table thead {
+    background: white;
+    border: 0;
+}
+
+.evaluation-table table td,th {
+    padding: 1%;
+}
+
+.evaluation-table table {
+    direction: rtl;
+    font-size: 1vw;
+    text-align: center;
+    width: 97%;
+    background: #F5F8FA;
+    color: black;
+    border: 1px solid #F5F8FA;
+    border-radius: 4px;
+    margin-bottom: 6%;
+    margin-top: 2%;
+}
+
+
+/*=================mobile==================*/
+
+@media only screen and (max-width: 780px) {
+
+    .header-bottom {
+        display: none;
+    }
+    .profile {
+        width: 100%;
+        box-shadow:  0 0 ;
+        display: initial;
+    }
+
+    .profile-right-section {
+        width: 100%;
+        box-shadow: 0 0 ;
+    }
+
+    .profile-left-section {
+        width: 100%;
+        box-shadow: 0 0 ;
+    }
+
+    .profile-right-section img:first-child {
+        width: 26%;
+    }
+
+    .profile-right-section h2 {
+        font-size: 4vw;
+    }
+
+    .profile-right-section h3 {
+        font-size: 3.5vw;
+    }
+
+    .profile-right-section button {
+        display: none;
+    }
+
+    .profile-right-section img:last-child {
+     display: none;
+    }
+
+    .profile-header {
+        box-shadow:  0 0 !important;
+
+    }
+
+    .profile-header nav ul li:last-of-type {
+        display: none;
+    }
+
+    .profile-header nav ul li:first-of-type {
+        text-align: center;
+    }
+
+
+    .profile-header nav ul li {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .profile-header nav ul li a {
+        font-size: 3.5vw;
+    }
+
+    .profile-terms {
+        width: 40%;
+        margin: 3%;
+        padding-top: 7%;
+    }
+
+    .profile h3 {
+        font-size: 3.5vw !important;
+    }
+
+    .profile h2 {
+        font-size: 4vw !important;
+    }
+
+    .test-header nav ul li a {
+        font-size: 4vw;
+    }
+
+    .test-header nav ul li:nth-child(2) {
+        display: none;
+    }
+
+    .test-header nav ul li {
+        width: 30%;
+    }
+
+    .get-question input {
+        width: 8%;
+        padding: 0 8%;
+        height: 8vw;
+    }
+
+    .get-question .plus {
+        right: 50.5%;
+        top: 5%;
+        font-size: 5.5vw;
+    }
+
+    .get-question .minus {
+        right: 67%;
+        top: 5%;
+        font-size: 5.5vw;
+    }
+
+    .question {
+        padding: 0 5%;
+    }
+
+    .question h2 {
+        text-align: right;
+    }
+
+    .question p {
+        width: 100%;
+    }
+
+    .question nav ul li a {
+        font-size: 3.5vw;
+    }
+
+    .question nav ul li  {
+        width: 45%;
+    }
+}
+
+
+/*=============mobile=============*/
+

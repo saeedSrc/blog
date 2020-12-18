@@ -1,0 +1,104 @@
+.login-box a {
+    font-weight: 800;
+}
+
+.login-box label, input {
+    display: inline-block;
+    width: 85%;
+    text-align: right;
+    direction: rtl;
+}
+
+.login-box {
+    position: relative;
+    box-shadow: 0px 4px 17px rgba(221, 221, 221, 0.21);
+    border-radius: 1%;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15%;
+    padding-bottom: 15%;
+    padding-top: 3%;
+    margin-top: -4vw;
+}
+
+.login-box img {
+    width: 50%;
+    float: right;
+}
+
+.login-box input {
+    height: 2.5vw;
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 3%;
+}
+
+.login-box span {
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+    direction: rtl;
+    margin-top: 2%;
+}
+
+.login-box button {
+    width: 85%;
+}
+
+.login-box input {
+        padding-right: 1% !important;
+}
+
+.login-box .form-group>* {
+    margin-bottom: 4%;
+}
+
+.login-label {
+    position: absolute;
+    right: -7%;
+    bottom: 3%;
+    width: 15% !important;
+}
+
+/*=============mobile======================*/
+@media only screen and (max-width: 780px) {
+
+    .header-bottom {
+        display: none;
+    }
+
+    .login-box img {
+        width: 50%;
+        float: initial;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .login-box input  {
+        height: 12vw !important;
+    }
+
+    .login-box button {
+        height: 12vw;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+
+    .login-box a {
+        font-size: 3vw;
+    }
+
+    .login-label {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15% !important;
+    }
+
+}
+/*=============mobile======================*/

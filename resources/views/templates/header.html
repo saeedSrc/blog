@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/fontiran.css">
+    <link rel="stylesheet" href="../static/css/home_style.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-top back-white-color2">
+        <h3>آموزش الکترونیکی دروس دانشگاهی</h3>
+        <img src="../static/img/logo.png" alt="">
+    </div>
+    <div class="header-middle back-white-color gray-color">
+        <div class="mobile">
+            <header class="header-nav">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <div class="mobile-profile relative">
+                    <a href="/sabad"><img src="../static/img/sabad.png" alt=""><span class="badge">۴۹</span></a>
+                    <a href="/SMP"><img src="../static/img/user.png" alt=""></a>
+
+                    <div class="mini-profile">
+                        <nav>
+                            <ul>
+                                <li><a href="">عسل اسمعیلی</a></li>
+                                <li><a href="">داشبورد</a></li>
+                                <li><a href="">شرکت در آزمون</a></li>
+                                <li><a href="">مشاهده کارنامه</a></li>
+                                <li><a href="">دانلود پاسخنامه</a></li>
+                                <li><a href="">امور مالی</a></li>
+                                <li><a href="">ویرایش اطلاعات</a></li>
+                                <li><a href="">خروج</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#work">Our Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="right-nav"><nav>
+            <ul>
+                <li><a href="/about">درباره ما</a></li>
+                <li><a href="/contact">تماس با ما</a></li>
+                <li><a href="#">سوالات رایج</a></li>
+                <li><a href="" class="active">خانه</a></li>
+            </ul>
+        </nav></div>
+        <div class="left-nav">
+            <nav>
+                <ul>
+                    <li><a href="/sabad"><span>سبد درس</span> <img src="../static/img/sabad.png" alt=""><span class="badge">۲</span></a></li>
+                    <li><a href="/SMP"><span>ورود-ثبت نام</span><img src="../static/img/user.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <img class="banner" src="../static/img/banner.jpg"  alt="">
+        <div class="main-title">
+            <h1>آموزش تمامی <span>دروس دانشگاهی</span> و برگزاری آزمون‌های <span>الکترونیکی</span> دروس مختلف</h1>
+        </div>
+            <form id="form1">
+                <!--{%csrf_token%}-->
+                <div class ="search-box-container">
+                    <div class="search-box">
+                        <input type="text" id="sear" name="sear"  placeholder="آموزش مورد نظر را جست و جو نمایید..." class="search"  />
+                        <img class="search-img" src="../static/img/search-img.png" alt="">
+                        <button type="submit" class="btn btn-search" onclick="search()">جستجو</button>
+                    </div>
+                </div>
+
+                <div class="element-table-home">
+                    <div class="col one-fifth-width">
+                        <img  src="../static/img/register.png">
+                        <img  class="back-circle"  src="../static/img/back_circle.png">
+                        <h3  class="htext"> ثبت نام آزمون</h3>
+                        <p   class="ptext">آزمون های استاندارد بهمراه پیش بینی رتبه واقعی شما در کنکور سازمان سنجش</p>
+                    </div>
+                    <div class="col one-fifth-width">
+                        <img  src="../static/img/azmon.png">
+                        <img class="back-circle" src="../static/img/back_circle.png">
+                        <h3 class="htext"> شرکت در آزمون</h3>
+                        <p class="ptext">سوالات تستی استاندارد بهمراه پاسخنامه تفصیلی و گزارش های مربوطه</p>
+                    </div>
+                    <div class="col one-fifth-width">
+
+                        <img  src="../static/img/moshaver.png">
+                        <img class="back-circle" src="../static/img/back_circle.png">
+                        <h3 class="htext"> مشاوره آزمون</h3>
+                        <p class="ptext">برنامه ریزی درسی متناسب با توانائی های داوطلب و تحلیل نتایج آزمون ها</p>
+                    </div>
+                    <div class="col one-fifth-width">
+                        <img  src="../static/img/class.png">
+                        <img class="back-circle" src="../static/img/back_circle.png">
+                        <h3 class="htext"> درخواست کلاس</h3>
+                        <p class="ptext">درخواست کلاس های رفع اشکال آنلاین گروهی و خصوصی با تدریس اساتید مجرب</p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

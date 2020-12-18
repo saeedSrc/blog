@@ -19,4 +19,15 @@ class HomeController extends Controller
         dd($users);
         return view('welcome');
     }
+
+    public function show(User $users)
+    {
+        $users = User::all();
+//        $users = User::chunk(10, function ($users) {
+//            foreach ($users as $user) {
+//                dd($users);
+//            }
+//        });
+        return view('welcome', compact('users'));
+    }
 }

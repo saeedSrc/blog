@@ -1,0 +1,210 @@
+<!--{%load static%}-->
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>ثبت نام</title>
+	<!--<link rel="stylesheet" href="{% static 'css/rg_style.css' %}">-->
+	<!--<script src="{% static 'js/jquery-3.4.1.js' %}"></script>-->
+	<!--<script  src="{% static 'js/digitat_a.js' %}"> </script>-->
+	<link rel="stylesheet" href="../static/css/rg_style.css">
+	<script src="../static/js/jquery-3.4.1.js"></script>
+	<script>
+        $(document).ready(function(){
+            $('#header').load('header.html', function() {
+                $(".banner").attr('src', '../static/img/about-banner.jpg');
+                $("#form1").css('display', 'none');
+                var mainTitle = '<h1>ثبت نام</h1>';
+                $(".main-title").html(mainTitle).css('top', '35%');
+                $(".container").css('height', '18vw');
+                $(".container").css('z-index', '-1');
+
+            });
+            $("#footer").load("footer.html");
+        });
+	</script>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="signup-content">
+	<div class="signup-box back-white-color">
+		<nav>
+			<ul>
+				<li> <a class="black-color active" href="">کارشناسی ارشد</a></li>
+				<li> <a class="black-color" href="">دکتری</a></li>
+			</ul>
+		</nav>
+		<form class="violet-color" action="/">
+		<div class="general-profile">
+			<h2 class="light-blue-color">مشخصات عمومی</h2>
+				<div class="form-group">
+					<label for="nam">نام</label>
+					<input  class="txtstyle back-white-color gray-color" type="text" id="nam" name="nam" placeholder="نام">
+				</div>
+				<div class="form-group">
+					<label for="namk">نام  خانوادگی</label>
+					<input type="text" id="namk" name="namk" class="txtstyle" placeholder="نام خانوادگی">
+				</div>
+				<div class="form-group">
+					<label for="shsh">شماره شناسنامه</label>
+					<input  class="txtstyle back-white-color gray-color" type="number" id="shsh" name="shsh"  placeholder=" شماره شناسنامه" >
+				</div>
+				<div class="form-group">
+					<label for="mob">تلفن همراه</label>
+					<input  class="txtstyle back-white-color gray-color" type="number" id="mob" name="mob"  placeholder="شماره موبایل">
+
+				</div>
+				<div class="form-group">
+					<label for="ema">آدرس ایمیل</label>
+					<br>
+					<input  class="txtstyle back-white-color gray-color" type="email" id="ema" name="ema"  placeholder=" ایمیل">
+				</div>
+				<div class="form-group">
+					<label for="kodm"> کد ملی</label>
+					<br>
+					<input  class="txtstyle back-white-color gray-color" type="number" id="kodm" name="kod"  placeholder="کدملی">
+				</div>
+				<div class="form-group">
+					<label for="shahr">  شهر</label>
+					<select  class="txtstyle back-white-color gray-color"id="shahr" name="shahr" list="dtshahr" placeholder="شهر">
+						<option>--- شهر خود را انتخاب کنید ---</option>
+					</select>
+				</div>
+				<div class="follow-up-section">
+					<span class="back-light-blue-color flow-now"></span>
+					&nbsp&nbsp
+					<span class="back-light-gray-color flow-next"></span>
+					&nbsp&nbsp
+					<span class="back-light-gray-color flow-next"></span>
+				</div>
+				<button class="btn flow-button">ادامه مراحل ></button>
+		</div>
+		<div class="school-profile">
+			<h2 class="light-blue-color">مشخصات تحصیلی</h2>
+
+				<div class="form-group">
+					<label for="noedk">نوع دانشگاه کارشناسی</label>
+					<select class="slt back-white-color gray-color" id="noedk" name ="noedk" onchange="get_namk()">
+						<option>--- نوع دانشگاه کارشناسی ---</option>
+						<option>دولتی</option>
+						<option>فنی و حرفه ای</option>
+						<option>پیام نور</option>
+						<option>آزاد اسلامی</option>
+						<option>غیر انتفاعی</option>
+						<option>علمی-کاربردی</option>
+						<option>پردیس</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="namdk">نام دانشگاه کارشناسی</label>
+					<input class="txtstyle" id="namdk" name="namdk"  placeholder="نام دانشگاه کارشناسی" type="text">
+				</div>
+				<div class="form-group">
+					<label for="reshtek">رشته‌ی کارشناسی</label>
+					<select class="txtstyle back-white-color gray-color" id="reshtek" name="reshtek" list="dtrk" onchange="get_gerayeshk()">
+						<option>رشته‌ی ۱</option>
+						<option>رشته‌ی ۱</option>
+						<option>رشته‌ی ۱</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="gerayeshk">گرایش تحصیل کارشناسی</label>
+					<select  class="slt back-white-color gray-color" id="gerayeshk" name="gerayeshk">
+						<option>--- گرایش تحصیلی کارشناسی ---</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="moadelk">معدل کارشناسی</label>
+					<br>
+					<input  type="text" name="moadelk" id="moadelk" class="txtstyle" placeholder="معدل کارشناسی (مثال 16.22)">
+				</div>
+				<div class="follow-up-section">
+					<span class="back-light-blue-color flow-now"></span>
+					&nbsp&nbsp
+					<span class="back-light-gray-color flow-next"></span>
+					&nbsp&nbsp
+					<span class="back-light-gray-color flow-next"></span>
+				</div>
+				<button class="btn flow-button">ادامه مراحل ></button>
+		</div>
+        <div class="register-msc-profile">
+				<h2 class="light-blue-color">مشخصات ثبت نامی کارشناسی ارشد</h2>
+			<div class="form-group">
+					<label for="goroh">گروه امتحانی</label>
+					<select class="slt back-white-color gray-color" name="goroh" id="goroh" onchange="get_majmoe()">
+						<option>--- گروه امتحانی ---</option>
+					</select>
+				</div>
+			<div class="form-group">
+				<label for="majmoe">مجموعه امتحانی</label>
+				<select class="slt back-white-color gray-color" name="majmoe" id="majmoe" onchange="get_reshte()">
+					<option>--- مجموعه امتحانی ---</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="remtahani">رشته امتحانی</label>
+				<select class="slt back-white-color gray-color" name="remtahani" id="remtahani" onchange="get_gerayesh()">
+					<option>--- رشته امتحانی ---</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="gemtahani">گرایش امتحانی</label>
+				<select class="slt back-white-color gray-color" name="gemtahani" id="gemtahani">
+					<option>--- گرایش امتحانی ---</option>
+				</select>
+			</div>
+			<div class="conditions">
+				<h3><p class="back-light-blue-color white-color"></p>&nbsp&nbsp در کارنامه دی جی تات رتبه تقریبی کنکو شما در کنکور سازمان سنجش نیز درج خواهد شد</h3>
+				<h3><p class="back-light-blue-color white-color"></p>&nbsp&nbsp شرکت در آزمون اول دکتری رایگان می باشد.</h3>
+				<h3><p class="back-light-blue-color white-color"></p>&nbsp&nbsp آزمون های آزمایشی دکتری در تاریخ های 28 آذر، 26 دی، 17 بهمن و 1 اسفند برگزار خواهند شد. </h3>
+				<h3><p class="back-light-blue-color white-color"></p>&nbsp&nbsp پس از تایید اطلاعات همکاران با شما تماس خواهند گرفت نام کاربری و پسورد را به شما اعلام خواهند کرد. </h3>
+			</div>
+			<div class="follow-up-section">
+					<span class="back-light-blue-color flow-now"></span>
+					&nbsp&nbsp
+					<span class="back-light-gray-color flow-next"></span>
+					&nbsp&nbsp
+					<span class="back-light-gray-color flow-next"></span>
+				</div>
+				<button class="btn flow-button" type="submit">ثبت نام</button>
+			</div>
+		</form>
+		<div class="success">
+		<img src="../static/img/success-signup.png" alt="">
+			<p class="light-green-color">ثبت نام شما با موفقیت انجام شد</p>
+			<p class="violet-color"> همکاران ما به زودی با شما در تماس خواهند بود.</p>
+		</div>
+			<!--<br>-->
+			<!--<div class="form-group">-->
+				<!--<label for="name">نوع دانشگاه کارشناسی ارشد</label>-->
+				<!--<br>-->
+				<!--<input  type="text" id="name" name="name">-->
+			<!--</div>-->
+			<!--<div class="form-group">-->
+				<!--<label for="last-name">نام دانشگاه کارشناسی ارشد</label>-->
+				<!--<br>-->
+				<!--<input  type="text" id="last-name" name="last-name">-->
+			<!--</div>-->
+			<!--<div class="form-group">-->
+				<!--<label for="phone-number">رشته کارشناسی ارشد </label>-->
+				<!--<br>-->
+				<!--<input  type="number" id="phone-number" name="phone-number">-->
+			<!--</div>-->
+			<!--<div class="form-group">-->
+				<!--<label for="email">گرایش تحصیلی کارشناسی ارشد</label>-->
+				<!--<br>-->
+				<!--<input  type="email" id="email" name="email">-->
+			<!--</div>-->
+			<!--<div class="form-group">-->
+				<!--<label for="email">معدل کارشناسی ارشد</label>-->
+				<!--<br>-->
+				<!--<input  type="email" id="email" name="email">-->
+			<!--</div>-->
+
+	</div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
